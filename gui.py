@@ -8,7 +8,9 @@ sg.theme("NeonBlue1")
 labelClock =sg.Text("", key = "clock")
 label =sg.Text("Type in a to-do")
 input_box=sg.InputText(tooltip="Enter todo",key="todo", size =47) #możemy dodawać własne klucze-  bez tego key wartość przypisywana kolejne. Pierwszy element ma 0
-add_button = sg.Button("Add")
+add_button = sg.Button ("Add",size=10,  mouseover_colors="LightBlue2", tooltip="Add", key="Add")
+#użycie obrazka zamiast napisu na przycisku
+#add_button = sg.Button (size=10, image_source="add.png",button_color="LightBlue2", mouseover_colors="LightBlue2", tooltip="Add", key="Add")
 list_box=sg.Listbox(values=functions.get_todos(), key='todos',
                     enable_events=True, size=[45,10])
 edit_button = sg.Button("Edit")
