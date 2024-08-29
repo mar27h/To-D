@@ -1,4 +1,4 @@
-FILEPATH =f"../../Files/todos.txt"
+FILEPATH =f"Files/todos.txt"
 
 def get_todos(filepath=FILEPATH):#definicja własnej funkcji - po to by nie dublować kod w aplikacji z przypisaniem defaultowego parametru
     """ Read the text file and return the list of to-do items""" #wyskoczy jeśli wpiszemy print(help(get_todos))
