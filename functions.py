@@ -10,6 +10,7 @@ def get_todos(filepath=FILEPATH):#definicja własnej funkcji - po to by nie dubl
 def write_todos(todos_arg, filepath=FILEPATH):
     """ Write the to-do items list in the text file. """
     with open(filepath, 'w') as file:
+        print(f"{todos_arg} z functions.write_todos")
         file.writelines(todos_arg)
 
 if __name__ == "__main__": #__name__ sie zmienia w zależności od tego skąd jest wywoływany plik functions. bedzie rowny main tylko jeśli odplamy go bezpośrdenio
